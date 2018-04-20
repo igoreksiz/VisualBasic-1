@@ -24,6 +24,7 @@ Partial Class RobotTrades
     Private Sub InitializeComponent()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
@@ -47,10 +48,16 @@ Partial Class RobotTrades
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
 >>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
+=======
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+>>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
         Me.SuspendLayout()
         '
         'Button1
         '
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         ChartArea4.Name = "ChartArea1"
@@ -75,6 +82,8 @@ Partial Class RobotTrades
 =======
 =======
 >>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
+=======
+>>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
         Me.Button1.Location = New System.Drawing.Point(337, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -82,7 +91,18 @@ Partial Class RobotTrades
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(23, 112)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
+        Me.DataGridView1.TabIndex = 1
+>>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
         '
         'DataGridView1
         '
@@ -148,6 +168,7 @@ Partial Class RobotTrades
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(2094, 957)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -160,6 +181,8 @@ Partial Class RobotTrades
 =======
 =======
 >>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
+=======
+>>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
         Me.ClientSize = New System.Drawing.Size(822, 465)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
@@ -167,6 +190,9 @@ Partial Class RobotTrades
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
+=======
 >>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
 =======
 >>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
@@ -177,6 +203,7 @@ Partial Class RobotTrades
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MejnüToolStripMenuItem As ToolStripMenuItem
@@ -184,6 +211,10 @@ Partial Class RobotTrades
     Friend WithEvents SzázalékToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InstrumentsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StrategiesToolStripMenuItem As ToolStripMenuItem
+=======
+    Friend WithEvents Button1 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+>>>>>>> dba7ad4fdcad5a6b7d68f96fa07cb714e10fe820
 =======
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
