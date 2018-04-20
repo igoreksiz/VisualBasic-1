@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 15 for Windows Desktop
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsApp1", "WindowsApp1\WindowsApp1.vbproj", "{BDB77289-C554-43A8-9C60-61B04628C588}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vezérlők", "Vezérlők\Vezérlők.vbproj", "{09E3EFEE-D317-45BF-AFA8-966C7448DF2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BDB77289-C554-43A8-9C60-61B04628C588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDB77289-C554-43A8-9C60-61B04628C588}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDB77289-C554-43A8-9C60-61B04628C588}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDB77289-C554-43A8-9C60-61B04628C588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E3EFEE-D317-45BF-AFA8-966C7448DF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E3EFEE-D317-45BF-AFA8-966C7448DF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E3EFEE-D317-45BF-AFA8-966C7448DF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E3EFEE-D317-45BF-AFA8-966C7448DF2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E2160483-7E3A-42E0-9495-ED13A84080F2}
+		SolutionGuid = {0B0E95D7-BD99-4049-B419-24F99B2D02A9}
 	EndGlobalSection
 EndGlobal
