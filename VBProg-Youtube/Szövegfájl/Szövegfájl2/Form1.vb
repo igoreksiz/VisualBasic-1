@@ -17,6 +17,18 @@
         Next
 
         FájlKi.Close()
+
+        ' Újra megnyitja a Fájlt és a végére hozzáfűzi az újabb adatokat
+        FájlKi = New IO.StreamWriter("adatok.csv", True, System.Text.Encoding.Default)
+
+        For I = 1 To 12
+            FájlKi.WriteLine("Sanyikáám" & I & vbNewLine & "Árvíztűrő tükörfúrógép")
+        Next
+        FájlKi.WriteLine()
+
+        FájlKi.Close()
+
+        Label1.Text = "A Fájlba írás kész." & vbNewLine
     End Sub
 
 End Class
