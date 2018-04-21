@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim EzredMásodperc, Másodperc, Perc, Óra As Integer
+    Dim EzredMásodperc, Másodperc, Perc, Óra, Hue As Integer
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Timer1.Start()
@@ -36,7 +36,9 @@
             Perc = 0
         End If
 
-        Label1.Text = Óra & ":" & Format(Perc, "00") & ":" & Format(Másodperc, "00") & ":" & EzredMásodperc
 
+
+        Label1.Text = Óra & ":" & Format(Perc, "00") & ":" & Format(Másodperc, "00") & ":" & EzredMásodperc
+        'Me.BackColor = Color.FromName()
     End Sub
 End Class
