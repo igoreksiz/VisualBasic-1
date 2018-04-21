@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Szövegfájl", "Szövegfájl\Szövegfájl.vbproj", "{A4393EDC-F7FF-413C-996F-3F45FA8C5E1B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Szövegfájl2", "Szövegfájl2\Szövegfájl2.vbproj", "{40143F87-A4A8-4A10-B2AA-487D572ADD3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4393EDC-F7FF-413C-996F-3F45FA8C5E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4393EDC-F7FF-413C-996F-3F45FA8C5E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4393EDC-F7FF-413C-996F-3F45FA8C5E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4393EDC-F7FF-413C-996F-3F45FA8C5E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40143F87-A4A8-4A10-B2AA-487D572ADD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40143F87-A4A8-4A10-B2AA-487D572ADD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40143F87-A4A8-4A10-B2AA-487D572ADD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40143F87-A4A8-4A10-B2AA-487D572ADD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB50480A-EEAA-43EC-969D-A502A9415E7F}
+	EndGlobalSection
+EndGlobal
