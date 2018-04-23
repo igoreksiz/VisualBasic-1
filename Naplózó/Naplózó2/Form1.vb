@@ -19,9 +19,12 @@
             With Sorok(SorCount)
                 .Dátum = Temp(0)
                 .Egyenleg = Temp(1)
-                Label1.Text += "dátum " & SorCount & " " & .Dátum & vbNewLine
+                Label1.Text += "dátum " & SorCount & " " & .Dátum & " egyenleg: " & .Egyenleg & vbNewLine
             End With
         Loop
+
+        ' tömb átméretezése
+        ReDim Preserve Sorok(SorCount)
 
         ' táblázat feltöltése
         FájlBe.Close()
@@ -32,7 +35,6 @@
 
                 DataGridView1.Rows(DataGridView1.Rows.Count - 1).Cells(0).Value = .Dátum
                 DataGridView1.Rows(DataGridView1.Rows.Count - 1).Cells(1).Value = .Egyenleg
-                Label1.Text += DataGridView1.Rows.Count - 1 & vbNewLine
             End With
         Next
 
