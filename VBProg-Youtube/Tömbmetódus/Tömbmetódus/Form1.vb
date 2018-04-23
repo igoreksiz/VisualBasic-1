@@ -9,6 +9,7 @@
         Dim Profit As Single
         Dim Komment As String
         Dim ProfitPerc As String
+        Dim Update As String
         Dim Hozam As Single
         Dim HozamPerc As Single
     End Structure
@@ -52,6 +53,8 @@
                 Label9.Text += Temp(7) & vbNewLine
                 .ProfitPerc = subString
                 Label10.Text += Temp(8) & vbNewLine
+                .Update = Temp(9)
+                Label11.Text += Temp(9) & vbNewLine
                 .Hozam = TempHozam
                 Label12.Text += TempHozam & vbNewLine
                 .HozamPerc = TempHozamPerc
