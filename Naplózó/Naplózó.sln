@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Naplózó", "Naplózó\Naplózó.vbproj", "{92EE6370-86FF-456A-A40E-F00556928E8E}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Naplózó2", "Naplózó2\Naplózó2.vbproj", "{865C470E-F7A3-434C-B542-9D68E3DF2F59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{92EE6370-86FF-456A-A40E-F00556928E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92EE6370-86FF-456A-A40E-F00556928E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92EE6370-86FF-456A-A40E-F00556928E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865C470E-F7A3-434C-B542-9D68E3DF2F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865C470E-F7A3-434C-B542-9D68E3DF2F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865C470E-F7A3-434C-B542-9D68E3DF2F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865C470E-F7A3-434C-B542-9D68E3DF2F59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
