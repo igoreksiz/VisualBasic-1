@@ -1,11 +1,17 @@
 ﻿Public Class Form1
+    Structure TSor
+        Dim Dátum As Date
+        Dim Egyenleg As Single
+    End Structure
+
+    Dim Sorok(9999999) As TSor
+    Dim SorCount As Integer
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim FájlBe As New IO.StreamReader("naplo.csv")
         Dim Sor As String
         Dim Temp() As String
         Dim Dátum() As Date
-
-        Dim SorCount As Integer
 
         SorCount = 0
         Do
