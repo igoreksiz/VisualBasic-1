@@ -62,19 +62,19 @@
 
         ' nyerő trédek DB száma ------------------------ külön függvényhivatkozással
         Dim NyerőDb As Integer
-        Tradek(0).Hozam = -0.01
+        Tradek(0).Profit = -0.01
         NyerőDb = Tradek.Count(AddressOf NyerőTrédek)
         Label_Stat.Text = "Nyerő Trédek: " & NyerőDb & " db" & vbNewLine
 
         ' vesztő trédek DB száma ------------------------ ugyanez egyszerűbben Lambda kifejezéssel:
         Dim VesztőDb As Integer
-        Tradek(0).Hozam = 0.01
-        VesztőDb = Tradek.Count(Function(Elem) Elem.Hozam < 0)
+        Tradek(0).Profit = 0.01
+        VesztőDb = Tradek.Count(Function(Elem) Elem.Profit < 0)
         Label_Stat.Text += "Vesztő Trédek: " & VesztőDb & " db" & vbNewLine
     End Sub
 
     Function NyerőTrédek(Elem As TTrade) As Boolean
-        NyerőTrédek = (Elem.Hozam > 0)
+        NyerőTrédek = (Elem.Profit > 0)
     End Function
 
 End Class
