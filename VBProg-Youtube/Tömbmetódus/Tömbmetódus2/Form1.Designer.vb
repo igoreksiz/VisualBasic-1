@@ -61,11 +61,12 @@ Partial Class Form1
         'Label_Stat
         '
         Me.Label_Stat.AutoSize = True
+        Me.Label_Stat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
         Me.Label_Stat.Location = New System.Drawing.Point(147, 32)
         Me.Label_Stat.Name = "Label_Stat"
-        Me.Label_Stat.Size = New System.Drawing.Size(75, 13)
+        Me.Label_Stat.Size = New System.Drawing.Size(94, 20)
         Me.Label_Stat.TabIndex = 14
-        Me.Label_Stat.Text = "Nyerő Trédek:"
+        Me.Label_Stat.Text = "Statisztika"
         '
         'DataGridView1
         '
@@ -94,54 +95,73 @@ Partial Class Form1
         '
         'Size
         '
-        Me.Size.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Size.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Size.HeaderText = "Size"
         Me.Size.Name = "Size"
+        Me.Size.Width = 52
         '
         'OpenPrice
         '
+        Me.OpenPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.OpenPrice.HeaderText = "OpenPrice"
         Me.OpenPrice.Name = "OpenPrice"
+        Me.OpenPrice.Width = 82
         '
         'CloseTime
         '
+        Me.CloseTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.CloseTime.HeaderText = "CloseTime"
         Me.CloseTime.Name = "CloseTime"
+        Me.CloseTime.Width = 81
         '
         'ClosePrice
         '
+        Me.ClosePrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.ClosePrice.HeaderText = "ClosePrice"
         Me.ClosePrice.Name = "ClosePrice"
+        Me.ClosePrice.Width = 82
         '
         'Profit
         '
+        Me.Profit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Profit.HeaderText = "Profit"
         Me.Profit.Name = "Profit"
+        Me.Profit.Width = 56
         '
         'Komment
         '
+        Me.Komment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Komment.HeaderText = "Komment"
         Me.Komment.Name = "Komment"
+        Me.Komment.Width = 76
         '
         'ProfitPercent
         '
+        Me.ProfitPercent.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.ProfitPercent.HeaderText = "ProfitPercent"
         Me.ProfitPercent.Name = "ProfitPercent"
+        Me.ProfitPercent.Width = 93
         '
         'Update
         '
+        Me.Update.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Update.HeaderText = "Update"
         Me.Update.Name = "Update"
+        Me.Update.Width = 67
         '
         'Growth
         '
+        Me.Growth.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Growth.HeaderText = "Growth"
         Me.Growth.Name = "Growth"
+        Me.Growth.Width = 66
         '
         'GrowthPercent
         '
+        Me.GrowthPercent.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.GrowthPercent.HeaderText = "GrowthPercent"
         Me.GrowthPercent.Name = "GrowthPercent"
+        Me.GrowthPercent.Width = 103
         '
         'Form1
         '
