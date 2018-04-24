@@ -66,7 +66,7 @@
         ' Array Resize
         ReDim Preserve Tradek(N)
 
-        ' nyerő trédek DB száma ------------------------ 
+        ' nyerő trédek DB száma ------------------------ külön függvényhivatkozással
         Dim NyerőDb As Integer
         Tradek(0).Hozam = -0.01
         NyerőDb = Tradek.Count(AddressOf NyerőTrédek)

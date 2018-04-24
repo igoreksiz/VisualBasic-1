@@ -30,12 +30,8 @@
         FájlBe.Close()
         For J = 1 To SorCount
 
-            DataGridView1.Rows.Add("")
-            With Sorok(J)
+            DataGridView1.Rows.Add(Sorok(J).Dátum, Sorok(J).Egyenleg)
 
-                DataGridView1.Rows(DataGridView1.Rows.Count - 1).Cells(0).Value = .Dátum
-                DataGridView1.Rows(DataGridView1.Rows.Count - 1).Cells(1).Value = .Egyenleg
-            End With
         Next
 
     End Sub
