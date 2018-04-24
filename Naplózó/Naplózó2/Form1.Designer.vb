@@ -22,8 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Dátum = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -53,18 +53,18 @@ Partial Class Form1
         '
         'Dátum
         '
-        DataGridViewCellStyle1.Format = "d"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.Dátum.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Format = "d"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.Dátum.DefaultCellStyle = DataGridViewCellStyle3
         Me.Dátum.Frozen = True
         Me.Dátum.HeaderText = "Dátum"
         Me.Dátum.Name = "Dátum"
         '
         'érték
         '
-        DataGridViewCellStyle2.Format = "N0"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.érték.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Format = "N0"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.érték.DefaultCellStyle = DataGridViewCellStyle4
         Me.érték.Frozen = True
         Me.érték.HeaderText = "érték"
         Me.érték.Name = "érték"
