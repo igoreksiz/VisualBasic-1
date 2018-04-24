@@ -34,34 +34,28 @@
             Dim subString As String = CSng(Replace(Temp(8).Substring(0, hossz), ".", ","))
             TempHozamPerc += subString
             With Tradek(N)
-                Label1.Text += N & vbNewLine
                 .OpenTime = Temp(0)
-                Label2.Text += Temp(0) & vbNewLine
                 .Type = Temp(1)
-                Label3.Text += Temp(1) & vbNewLine
                 .Size = CSng(Replace(Temp(2), ".", ","))
-                Label4.Text += Temp(2) & vbNewLine
                 .OpenPrice = CSng(Replace(Temp(3), ".", ","))
-                Label5.Text += Temp(3) & vbNewLine
                 .CloseTime = Temp(4)
-                Label6.Text += Temp(4) & vbNewLine
                 .ClosePrice = CSng(Replace(Temp(5), ".", ","))
-                Label7.Text += Temp(5) & vbNewLine
                 .Profit = CSng(Replace(Temp(6), ".", ","))
-                Label8.Text += Temp(6) & vbNewLine
                 .Komment = Temp(7)
-                Label9.Text += Temp(7) & vbNewLine
                 .ProfitPerc = subString
-                Label10.Text += Temp(8) & vbNewLine
                 .Update = Temp(9)
-                Label11.Text += Temp(9) & vbNewLine
                 .Hozam = TempHozam
-                Label12.Text += TempHozam & vbNewLine
                 .HozamPerc = TempHozamPerc
-                Label13.Text += TempHozamPerc & vbNewLine
             End With
         Loop
+
+        ' DataGridView feltöltése
         FileBe.Close()
+        For J = 1 To N
+
+            DataGridView1.Rows.Add(Tradek(J).OpenTime, Tradek(J).Type, Tradek(J).Size, Tradek(J).OpenPrice, Tradek(J).CloseTime, Tradek(J).ClosePrice, Tradek(J).Profit, Tradek(J).Komment, Tradek(J).ProfitPerc, Tradek(J).Update, Tradek(J).Hozam, Tradek(J).HozamPerc)
+
+        Next
 
         ' Array Resize
         ReDim Preserve Tradek(N)
