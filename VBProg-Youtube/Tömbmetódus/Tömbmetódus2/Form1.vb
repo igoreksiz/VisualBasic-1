@@ -66,14 +66,17 @@
         ' Array Resize
         ReDim Preserve Tradek(N)
 
-        ' nyerő trédek DB száma ------------------------
+        ' nyerő trédek DB száma ------------------------ 
         Dim NyerőDb As Integer
         Tradek(0).Hozam = -0.01
         NyerőDb = Tradek.Count(AddressOf NyerőTrédek)
-        Label_Stat.Text = "Nyerő Trédek: " & NyerőDb & vbNewLine
+        Label_Stat.Text = "Nyerő Trédek: " & NyerőDb & " db" & vbNewLine
 
-        ' vesztő trédek DB száma ------------------------
-
+        ' vesztő trédek DB száma ------------------------ ugyanez egyszerűbben Lambda kifejezéssel:
+        Dim VesztőDb As Integer
+        Tradek(0).Hozam = 0.01
+        VesztőDb = Tradek.Count(Function(Elem) Elem.Hozam < 0)
+        Label_Stat.Text += "Vesztő Trédek: " & VesztőDb & " db" & vbNewLine
     End Sub
 
     Function NyerőTrédek(Elem As TTrade) As Boolean
