@@ -77,6 +77,8 @@ Partial Class Form1
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.OpenTime, Me.Type, Me.Size, Me.OpenPrice, Me.CloseTime, Me.ClosePrice, Me.Profit, Me.Komment, Me.ProfitPercent, Me.Update, Me.Growth, Me.GrowthPercent})
         Me.DataGridView1.Location = New System.Drawing.Point(16, 455)
@@ -170,6 +172,9 @@ Partial Class Form1
         '
         'Chart1
         '
+        Me.Chart1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ChartArea1.Name = "ChartArea1"
         Me.Chart1.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
@@ -193,7 +198,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1562, 820)
+        Me.ClientSize = New System.Drawing.Size(1286, 820)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label_Stat)
