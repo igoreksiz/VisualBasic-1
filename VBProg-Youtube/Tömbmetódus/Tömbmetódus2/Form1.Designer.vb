@@ -183,6 +183,7 @@ Partial Class Form1
         Series1.Color = System.Drawing.Color.Green
         Series1.Legend = "Legend1"
         Series1.Name = "hozam"
+        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime
         Me.Chart1.Series.Add(Series1)
         Me.Chart1.Size = New System.Drawing.Size(1247, 382)
         Me.Chart1.TabIndex = 16
