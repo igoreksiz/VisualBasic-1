@@ -22,6 +22,9 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label_Stat = New System.Windows.Forms.Label()
@@ -38,7 +41,9 @@ Partial Class Form1
         Me.Update = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Growth = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GrowthPercent = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -163,11 +168,32 @@ Partial Class Form1
         Me.GrowthPercent.Name = "GrowthPercent"
         Me.GrowthPercent.Width = 103
         '
+        'Chart1
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(16, 67)
+        Me.Chart1.Name = "Chart1"
+        Series1.BorderColor = System.Drawing.Color.Chartreuse
+        Series1.BorderWidth = 2
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series1.Color = System.Drawing.Color.Green
+        Series1.Legend = "Legend1"
+        Series1.Name = "hozam"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Size = New System.Drawing.Size(1247, 382)
+        Me.Chart1.TabIndex = 16
+        Me.Chart1.Text = "Chart1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1562, 820)
+        Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label_Stat)
         Me.Controls.Add(Me.Label1)
@@ -175,6 +201,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -196,4 +223,5 @@ Partial Class Form1
     Friend WithEvents Update As DataGridViewTextBoxColumn
     Friend WithEvents Growth As DataGridViewTextBoxColumn
     Friend WithEvents GrowthPercent As DataGridViewTextBoxColumn
+    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
 End Class

@@ -52,7 +52,7 @@
         ' DataGridView feltöltése
         FileBe.Close()
         For J = 1 To N
-
+            Me.Chart1.Series("hozam").Points.AddXY(Tradek(J).CloseTime, Tradek(J).Hozam)
             DataGridView1.Rows.Add(Tradek(J).OpenTime, Tradek(J).Type, Tradek(J).Size, Tradek(J).OpenPrice, Tradek(J).CloseTime, Tradek(J).ClosePrice, Tradek(J).Profit, Tradek(J).Komment, Tradek(J).ProfitPerc, Tradek(J).Update, Tradek(J).Hozam, Tradek(J).HozamPerc)
 
         Next
