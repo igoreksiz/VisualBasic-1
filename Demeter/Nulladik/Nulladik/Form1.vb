@@ -8,4 +8,12 @@
             Button1.Text = "Elrejt"
         End If
     End Sub
+
+    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        Dim HolX, HolY As Int32
+
+        HolX = (Me.Width - Label1.Width) / 2
+        HolY = (Me.ClientSize.Height) / 2
+        Label1.Location = New System.Drawing.Point(HolX, HolY)
+    End Sub
 End Class
