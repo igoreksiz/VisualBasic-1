@@ -54,7 +54,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(607, 380)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.MinimumSize = New System.Drawing.Size(400, 150)
+        Me.MinimumSize = New System.Drawing.Size(200, 80)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
