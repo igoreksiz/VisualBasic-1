@@ -42,6 +42,7 @@ Partial Class Form1
         Me.Growth = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GrowthPercent = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -230,4 +231,5 @@ Partial Class Form1
     Friend WithEvents Growth As DataGridViewTextBoxColumn
     Friend WithEvents GrowthPercent As DataGridViewTextBoxColumn
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class
