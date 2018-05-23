@@ -25,6 +25,17 @@
                     Me.Opacity -= 0.1
                 End If
             ElseIf e.Button = Windows.Forms.MouseButtons.Right Then
+                mit = " Ablak átlátszóságának csökkentése "
+                If Me.Opacity <= 1.0 Then
+                    Me.Opacity += 0.1
+                End If
+            End If
+        ElseIf e.Location.X < Me.Width / 2 And e.LocationY > Me.ClientSize.Height / 2 Then
+            mit = " Ablak háttérképének megjelenítése "
+            If Me.BackgroundImageLayout < 4 Then
+                BackgroundImageLayout = BackgroundImageLayout + 1
+            ElseIf CInt(Me.BackgroundImageLayout) = 4 Then
+                BackgroundImageLayout = 0
             End If
         End If
     End Sub
