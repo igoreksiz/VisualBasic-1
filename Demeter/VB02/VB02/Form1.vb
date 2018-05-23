@@ -30,13 +30,31 @@
                     Me.Opacity += 0.1
                 End If
             End If
-        ElseIf e.Location.X < Me.Width / 2 And e.LocationY > Me.ClientSize.Height / 2 Then
+        ElseIf e.Location.X < Me.Width / 2 And e.Location.Y > Me.ClientSize.Height / 2 Then
             mit = " Ablak háttérképének megjelenítése "
             If Me.BackgroundImageLayout < 4 Then
                 BackgroundImageLayout = BackgroundImageLayout + 1
             ElseIf CInt(Me.BackgroundImageLayout) = 4 Then
                 BackgroundImageLayout = 0
             End If
+        ElseIf e.Button = Windows.Forms.MouseButtons.Right Then
+            mit = "Ablak (maximális, normál) méretének váltása"
+            If Me.WindowState = FormWindowState.Normal Then
+                Me.WindowState = FormWindowState.Maximized
+            ElseIf Me.WindowState = FormWindowState.Maximized Then
+                Me.WindowState = FormWindowState.Normal
+            End If
+            'End If
+        ElseIf e.Location.X > Me.Width / 2 And e.Location.Y > Me.ClientSize.Height / 2 Then
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            mit = " Ablak megjelenítése a tálcán "
+            Me.ShowInTaskbar = Not Me.ShowInTaskbar
+        ElseIf e.Button = Windows.Forms.MouseButtons.Right Then
+            mit = " Ablak ikonjának megjelenítése "
+            Me.ShowIcon = Not Me.ShowIcon
         End If
+        End If
+        Me.Text = ""
+        Me.Text = Me.FormBorderStyle.ToString + " - " + Me.BackgroundImageLayout.ToString + " - (" + CStr(100 * Me.Opacity) + "%)"
     End Sub
 End Class
